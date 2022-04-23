@@ -1,36 +1,68 @@
 body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+/* div container, parent of the entire document */
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Title/header */
 #title {
-    margin-top: 50px;
-    font-weight: 500;
+  margin-top: 50px;
+  font-weight: 500;
 }
 
+/* Form and checkbox inputs */
+#form-container {
+  width: 300px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#options {
+  font-weight: 400;
+  width: inherit;
+  padding-bottom: 5px;
+  border-bottom: solid aquamarine;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.row {
+  display: flex;
+  direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* Find option button */
 #btn {
-    border: none;
-    padding: 0.7em 1.7em;
-    font-family: inherit;
-    font-size: 18px;
-    border-radius: 7px;
-    background-color: aquamarine;
-    box-shadow: 5px 5px 5px #c5c5c5, -2px -2px 2px #ffffff;
+  border: none;
+  padding: 0.7em 1.7em;
+  font-family: inherit;
+  font-size: 18px;
+  border-radius: 7px;
+  background-color: #7fffd4;
+  box-shadow: 5px 5px 5px #c5c5c5, -2px -2px 2px #ffffff;
 }
 #btn:hover {
-    box-shadow: 7px 7px 5px #c5c5c5, -2px -2px 2px #ffffff;
+  box-shadow: 7px 7px 5px #c5c5c5, -2px -2px 2px #ffffff;
 }
 #btn:active {
-    box-shadow: inset 5px 5px 5px #c5c5c5, inset -2px -2px 2px #ffffff;
+  box-shadow: inset 5px 5px 5px #c5c5c5, inset -2px -2px 2px #ffffff;
 }
 
 #answer {
-    font-weight: 400;
+  font-weight: 400;
 }
