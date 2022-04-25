@@ -6,37 +6,37 @@ document.addEventListener("DOMContentLoaded", () => {
   const foodArray = [
     // hurtfull class means hurtfull to Fer's stomach
     // food categories:
-    // burgers, fried chicken, french fries, milkshakes, nachos, tacos carne asada, tacos cebosos, pizza, boneless, 
+    // burgers, fried chicken, french fries, milkshakes, nachos, tacos carne asada, tacos cebosos, pizza, boneless,
     // pasta, crepes, corndogs, baguette, tacos pastor, tacos vapor, coffee, ice cream, salad
     {
       name: "carls.jr",
       food: ["burgers", "fried chicken", "french fries", "milkshakes"],
-      hurtfull: "yes",
+      unhealthy: "yes",
     },
     {
       name: "nachos",
       food: ["nachos"],
-      hurtfull: "no",
+      unhealthy: "no",
     },
     {
       name: "cotaco",
       food: ["tacos carne asada"],
-      hurtfull: "no",
+      unhealthy: "no",
     },
     {
       name: "tacos don juan",
       food: ["tacos cebosos"],
-      hurtfull: "no",
+      unhealthy: "no",
     },
     {
       name: "pizza bonles",
       food: ["pizza", "boneless"],
-      hurtfull: "yes",
+      unhealthy: "yes",
     },
     {
       name: "stella rose",
       food: ["pasta", "crepes", "corndogs", "salad"],
-      hurtfull: "no",
+      unhealthy: "no",
     },
     {
       name: "jarros y tarros",
@@ -46,31 +46,32 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "nostras",
       food: ["pizza", "pasta"],
-      hurtfull: "yes",
+      unhealthy: "yes",
     },
     {
       name: "olivo",
       food: ["pizza", "pasta"],
-      hurtfull: "yes",
+      unhealthy: "yes",
     },
     {
       name: "tacos rosales",
       food: ["tacos pastor"],
-      hurtfull: "no",
+      unhealthy: "no",
     },
     {
       name: "tacos del chavo",
       food: ["tacos pastor"],
-      hurtfull: "yes",
+      unhealthy: "yes",
     },
     {
       name: "caffenio",
       food: ["coffee", "milkshake"],
+      unhealthy: "no",
     },
     {
       name: "dairy queen",
       food: ["ice cream"],
-      hurtfull: "yes",
+      unhealthy: "yes",
     },
     {
       name: "mc donalds",
@@ -81,27 +82,27 @@ document.addEventListener("DOMContentLoaded", () => {
         "ice cream",
         "milkshakes",
       ],
-      hurtfull: "yes",
+      unhealthy: "yes",
     },
     {
       name: "starbucks",
       food: ["coffee", "milkshake"],
-      hurtfull: "no",
+      unhealthy: "no",
     },
     {
       name: "little ceasars",
       food: ["pizza"],
-      hurtfull: "yes",
+      unhealthy: "yes",
     },
     {
       name: "lola",
       food: ["boneless", "salad"],
-      hurtfull: "yes",
+      unhealthy: "yes",
     },
     {
       name: "manzara",
       food: ["pasta", "salad"],
-      hurtfull: "no",
+      unhealthy: "no",
     },
   ];
 

@@ -2,44 +2,38 @@ body {
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
-}
-
-/* div container, parent of the entire document */
-.container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(254, 245, 234);
 }
 
-/* Title/header */
 #title {
   margin-top: 50px;
   font-weight: 500;
 }
 
-/* Form and checkbox inputs */
 #form-container {
-  width: 300px;
   margin-bottom: 30px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
-#options {
+.form {
+  height: 450px;
+  margin: 0 20px;
+}
+
+.subject {
   font-weight: 400;
   width: inherit;
   padding-bottom: 5px;
   border-bottom: solid aquamarine;
 }
 
-#form {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-}
-
 .row {
+  width: 200px;
   display: flex;
   direction: row;
   justify-content: space-between;
@@ -54,13 +48,13 @@ body {
   font-size: 18px;
   border-radius: 7px;
   background-color: #7fffd4;
-  box-shadow: 5px 5px 5px #c5c5c5, -2px -2px 2px #ffffff;
+  box-shadow: 5px 5px 5px #c5c5c5, -2px -2px 2px rgb(254, 245, 234);
 }
 #btn:hover {
-  box-shadow: 7px 7px 5px #c5c5c5, -2px -2px 2px #ffffff;
+  box-shadow: 7px 7px 5px #c5c5c5, -2px -2px 2px rgb(254, 245, 234);
 }
 #btn:active {
-  box-shadow: inset 5px 5px 5px #c5c5c5, inset -2px -2px 2px #ffffff;
+  box-shadow: inset 5px 5px 5px #c5c5c5, inset -2px -2px 2px rgb(254, 245, 234);
 }
 
 #answer {
