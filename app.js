@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const btn = document.querySelector("#btn"); //Sets the find option button
-  const span = document.querySelector("#result"); //Sets the span text
+  const btn = document.querySelector("#btn"); // Sets the find option button
+  const span = document.querySelector("#result"); // Sets the span text
   // Checkboxes:
   const baguette = document.getElementById("baguette");
   const boneless = document.getElementById("boneless");
@@ -20,13 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const tacosCebosos = document.getElementById("tacosCebosos");
   const tacosPastor = document.getElementById("tacosPastor");
   const tacosVapor = document.getElementById("tacosVapor");
-  // // Radio buttons:
+  // Radio buttons:
   const yes = document.getElementById("yes");
   const no = document.getElementById("no");
 
-  console.log(yes.checked, no.checked);
-
-  //The array of food places
+  // Array: Food places
   const foodArray = [
     // unheathy class means hurtfull to Fer's stomach
     // food categories:
@@ -130,7 +128,14 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   ];
 
-  //function that shuffles and return an option from witch to eat
+  // Function: Creates a new copy of foodArray
+  function createArray() {
+    let copyArray = foodArray.slice();
+    console.log(copyArray);
+  }
+  createArray();
+
+  //Function: Shuffles and returns an option from witch to eat
   function findOption() {
     span.textContent = shuffle(foodArray)[0].name;
   }
