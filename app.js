@@ -20,25 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const tacosCebosos = document.getElementById("tacosCebosos");
   const tacosPastor = document.getElementById("tacosPastor");
   const tacosVapor = document.getElementById("tacosVapor");
+  // // Radio buttons:
+  const yes = document.getElementById("yes");
+  const no = document.getElementById("no");
 
-  console.log(burgers.checked)
-  console.log(boneless.checked)
-  console.log(burgers.checked)
-  console.log(coffee.checked)
-  console.log(corndogs.checked)
-  console.log(crepes.checked)
-  console.log(frenchFries.checked)
-  console.log(friedChicken.checked)
-  console.log(iceCream.checked)
-  console.log(milkshakes.checked)
-  console.log(nachos.checked)
-  console.log(pasta.checked)
-  console.log(pizza.checked)
-  console.log(salad.checked)
-  console.log(tacosCarneAsada.checked)
-  console.log(tacosCebosos.checked)
-  console.log(tacosPastor.checked)
-  console.log(tacosVapor.checked)
+  console.log(yes.checked, no.checked);
 
   //The array of food places
   const foodArray = [

@@ -20,12 +20,14 @@
   </head>
   <body>
     <h1 id="title">What to eat</h1>
+    <!-- Checkboxes -->
     <div id="formContainer">
       <div class="form">
         <h3 id="options" class="subject">Options:</h3>
+
         <div class="row">
           <label for="baguette">Baguette</label>
-          <input type="checkbox" id="baguette"/>
+          <input type="checkbox" id="baguette" />
         </div>
         <div class="row">
           <label for="">Boneless</label>
@@ -96,15 +98,17 @@
           <input type="checkbox" id="tacosVapor" />
         </div>
       </div>
+
+      <!-- Radio buttons -->
       <div class="form">
         <h3 id="unhealthy" class="subject">Include unhealthy?</h3>
         <div class="row">
-          <label for="">Yes</label>
-          <input type="radio" name="" id="" />
+          <label for="yes">Yes</label>
+          <input type="radio" name="health" id="yes" checked/>
         </div>
         <div class="row">
-          <label for="">No</label>
-          <input type="radio" name="" id="" />
+          <label for="no">No</label>
+          <input type="radio" name="health" id="no" />
         </div>
       </div>
     </div>
