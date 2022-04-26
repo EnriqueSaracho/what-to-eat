@@ -13,16 +13,17 @@ body {
   font-weight: 500;
 }
 
-#form-container {
+#formContainer {
   margin-bottom: 30px;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .form {
-  height: 450px;
-  margin: 0 20px;
+  margin: 0 auto;
+  padding: 0 25px;
 }
 
 .subject {
