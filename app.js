@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const yes = document.getElementById("yes");
   const no = document.getElementById("no");
 
-  // Array: Food places
+  // Array: Food places.
   const foodArray = [
     // unheathy class means hurtfull to Fer's stomach
     // food categories:
@@ -128,18 +128,13 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   ];
 
-  // Function: Creates a new copy of foodArray
-  function createArray() {
-    let copyArray = foodArray.slice();
-    console.log(copyArray);
-  }
-  createArray();
-
-  //Function: Shuffles and returns an option from witch to eat
+  // Function: Creates a copy of foodArray, and returns a random option from witch to eat.
   function findOption() {
-    span.textContent = shuffle(foodArray)[0].name;
+    let copyArray = foodArray.slice();
+    span.textContent = shuffle(copyArray)[0].name;
   }
 
+  // Function: Shuffles array.
   function shuffle(array) {
     var m = array.length,
       t,
@@ -157,6 +152,27 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     return array;
+  }
+
+  // Function: Goes through array and eliminates specific objects.
+  function sortArray(array) {
+    if (baguette == false) {
+      array.forEach(element => {
+        if (search(element.name, "baguette")) {
+          
+        }
+      });
+    }
+    
+  }
+
+  // Function: Searches for food in each element of array
+  function search(array, food) {
+    array.forEach(element => {
+      if (element === food) {
+        return true;
+      }
+    })
   }
 
   btn.addEventListener("click", findOption);
