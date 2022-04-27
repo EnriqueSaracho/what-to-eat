@@ -340,8 +340,21 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    console.log(sortedArray);
-    span.textContent = shuffle(sortedArray)[0].name;
+    // Radio button: No
+    if (no.checked) {
+      sortedArrayOne.forEach((element) => {
+        if (element.unhealthy === "no") {
+          sortedArrayTwo.push(element);
+        }
+      });
+    } else {
+      sortedArrayOne.forEach(element => {
+        sortedArrayTwo.push(element);
+      })
+    }
+
+    console.log(sortedArrayTwo);
+    span.textContent = shuffle(sortedArrayTwo)[0].name;
   }
 
   // Function: Shuffles array.
