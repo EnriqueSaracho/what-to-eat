@@ -156,14 +156,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Function: Creates a new Array, fills it with the checked elements, and returns a random option from witch to eat.
   function findOption() {
-    const sortedArray = [];
+    const sortedArrayOne = []; // Gets all the elements from Checkboxes
+    const sortedArrayTwo = []; // Gets all the selected elements from Radio buttons
 
     // Checkbox: Baguette
     if (baguette.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
           if (item === "baguette") {
-            sortedArray.push(element);
+            sortedArrayOne.push(element);
           }
         });
       });
@@ -173,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
           if (item === "boneless") {
-            sortedArray.push(element);
+            sortedArrayOne.push(element);
           }
         });
       });
@@ -183,7 +184,7 @@ document.addEventListener("DOMContentLoaded", () => {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
           if (item === "burgers") {
-            sortedArray.push(element);
+            sortedArrayOne.push(element);
           }
         });
       });
@@ -193,7 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
           if (item === "coffee") {
-            sortedArray.push(element);
+            sortedArrayOne.push(element);
           }
         });
       });
@@ -203,7 +204,7 @@ document.addEventListener("DOMContentLoaded", () => {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
           if (item === "corndogs") {
-            sortedArray.push(element);
+            sortedArrayOne.push(element);
           }
         });
       });
@@ -213,7 +214,7 @@ document.addEventListener("DOMContentLoaded", () => {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
           if (item === "crepes") {
-            sortedArray.push(element);
+            sortedArrayOne.push(element);
           }
         });
       });
@@ -223,7 +224,7 @@ document.addEventListener("DOMContentLoaded", () => {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
           if (item === "french fries") {
-            sortedArray.push(element);
+            sortedArrayOne.push(element);
           }
         });
       });
@@ -233,7 +234,7 @@ document.addEventListener("DOMContentLoaded", () => {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
           if (item === "fried chicken") {
-            sortedArray.push(element);
+            sortedArrayOne.push(element);
           }
         });
       });
@@ -243,7 +244,7 @@ document.addEventListener("DOMContentLoaded", () => {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
           if (item === "ice cream") {
-            sortedArray.push(element);
+            sortedArrayOne.push(element);
           }
         });
       });
@@ -253,7 +254,7 @@ document.addEventListener("DOMContentLoaded", () => {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
           if (item === "milkshakes") {
-            sortedArray.push(element);
+            sortedArrayOne.push(element);
           }
         });
       });
@@ -263,7 +264,7 @@ document.addEventListener("DOMContentLoaded", () => {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
           if (item === "nachos") {
-            sortedArray.push(element);
+            sortedArrayOne.push(element);
           }
         });
       });
@@ -273,7 +274,7 @@ document.addEventListener("DOMContentLoaded", () => {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
           if (item === "pasta") {
-            sortedArray.push(element);
+            sortedArrayOne.push(element);
           }
         });
       });
@@ -283,7 +284,7 @@ document.addEventListener("DOMContentLoaded", () => {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
           if (item === "pizza") {
-            sortedArray.push(element);
+            sortedArrayOne.push(element);
           }
         });
       });
@@ -293,7 +294,7 @@ document.addEventListener("DOMContentLoaded", () => {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
           if (item === "salad") {
-            sortedArray.push(element);
+            sortedArrayOne.push(element);
           }
         });
       });
@@ -303,7 +304,7 @@ document.addEventListener("DOMContentLoaded", () => {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
           if (item === "tacos carne asada") {
-            sortedArray.push(element);
+            sortedArrayOne.push(element);
           }
         });
       });
@@ -313,7 +314,7 @@ document.addEventListener("DOMContentLoaded", () => {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
           if (item === "tacos cebosos") {
-            sortedArray.push(element);
+            sortedArrayOne.push(element);
           }
         });
       });
@@ -323,7 +324,7 @@ document.addEventListener("DOMContentLoaded", () => {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
           if (item === "tacos pastor") {
-            sortedArray.push(element);
+            sortedArrayOne.push(element);
           }
         });
       });
@@ -333,7 +334,7 @@ document.addEventListener("DOMContentLoaded", () => {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
           if (item === "tacos vapor") {
-            sortedArray.push(element);
+            sortedArrayOne.push(element);
           }
         });
       });
