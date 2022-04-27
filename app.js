@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (baguette.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
-          if (item === "baguette") {
+          if (item === "baguette" && !sortedArrayOne.includes(element)) {
             sortedArrayOne.push(element);
           }
         });
@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (boneless.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
-          if (item === "boneless") {
+          if (item === "boneless" && !sortedArrayOne.includes(element)) {
             sortedArrayOne.push(element);
           }
         });
@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (burgers.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
-          if (item === "burgers") {
+          if (item === "burgers" && !sortedArrayOne.includes(element)) {
             sortedArrayOne.push(element);
           }
         });
@@ -193,7 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (coffee.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
-          if (item === "coffee") {
+          if (item === "coffee" && !sortedArrayOne.includes(element)) {
             sortedArrayOne.push(element);
           }
         });
@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (corndogs.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
-          if (item === "corndogs") {
+          if (item === "corndogs" && !sortedArrayOne.includes(element)) {
             sortedArrayOne.push(element);
           }
         });
@@ -213,7 +213,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (crepes.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
-          if (item === "crepes") {
+          if (item === "crepes" && !sortedArrayOne.includes(element)) {
             sortedArrayOne.push(element);
           }
         });
@@ -223,7 +223,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (frenchFries.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
-          if (item === "french fries") {
+          if (item === "french fries" && !sortedArrayOne.includes(element)) {
             sortedArrayOne.push(element);
           }
         });
@@ -233,7 +233,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (friedChicken.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
-          if (item === "fried chicken") {
+          if (item === "fried chicken" && !sortedArrayOne.includes(element)) {
             sortedArrayOne.push(element);
           }
         });
@@ -243,7 +243,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (iceCream.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
-          if (item === "ice cream") {
+          if (item === "ice cream" && !sortedArrayOne.includes(element)) {
             sortedArrayOne.push(element);
           }
         });
@@ -253,7 +253,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (milkshakes.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
-          if (item === "milkshakes") {
+          if (item === "milkshakes" && !sortedArrayOne.includes(element)) {
             sortedArrayOne.push(element);
           }
         });
@@ -263,7 +263,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (nachos.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
-          if (item === "nachos") {
+          if (item === "nachos" && !sortedArrayOne.includes(element)) {
             sortedArrayOne.push(element);
           }
         });
@@ -273,7 +273,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (pasta.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
-          if (item === "pasta") {
+          if (item === "pasta" && !sortedArrayOne.includes(element)) {
             sortedArrayOne.push(element);
           }
         });
@@ -283,7 +283,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (pizza.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
-          if (item === "pizza") {
+          if (item === "pizza" && !sortedArrayOne.includes(element)) {
             sortedArrayOne.push(element);
           }
         });
@@ -293,7 +293,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (salad.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
-          if (item === "salad") {
+          if (item === "salad" && !sortedArrayOne.includes(element)) {
             sortedArrayOne.push(element);
           }
         });
@@ -303,7 +303,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (tacosCarneAsada.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
-          if (item === "tacos carne asada") {
+          if (item === "tacos carne asada" && !sortedArrayOne.includes(element)) {
             sortedArrayOne.push(element);
           }
         });
@@ -323,7 +323,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (tacosPastor.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
-          if (item === "tacos pastor") {
+          if (item === "tacos pastor" && !sortedArrayOne.includes(element)) {
             sortedArrayOne.push(element);
           }
         });
@@ -333,12 +333,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (tacosVapor.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
-          if (item === "tacos vapor") {
+          if (item === "tacos vapor" && !sortedArrayOne.includes(element)) {
             sortedArrayOne.push(element);
           }
         });
       });
     }
+    console.log(sortedArrayOne);
 
     // Radio button: No.
     if (no.checked) {
