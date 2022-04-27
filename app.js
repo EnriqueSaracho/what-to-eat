@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (baguette == false) {
       array.forEach(element => {
         if (search(element.name, "baguette")) {
-          
+          array.pop()
         }
       });
     }
