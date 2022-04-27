@@ -46,8 +46,12 @@ body {
   justify-content: space-between;
   cursor: pointer;
 }
+.row input {
+  cursor: pointer;
+}
 
 #answerContainer {
+  width: 300px;
   min-height: 410px;
   display: flex;
   flex-direction: column;
