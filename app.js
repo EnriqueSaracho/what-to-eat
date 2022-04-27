@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const btn = document.querySelector("#btn"); // Sets the find option button
-  const span = document.querySelector("#result"); // Sets the span text
+  const btn = document.querySelector("#btn"); // Sets the find option button.
+  const result = document.querySelector("#result"); // Sets the result text.
   // Checkboxes:
   const baguette = document.getElementById("baguette");
   const boneless = document.getElementById("boneless");
@@ -154,12 +154,12 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   ];
 
-  // Function: Creates a new Array, fills it with the checked elements, and returns a random option from witch to eat.
+  // Function: Creates a new Array, fills it with the checked elements, and returns a list of options from which to eat.
   function findOption() {
-    const sortedArrayOne = []; // Gets all the elements from Checkboxes
-    const sortedArrayTwo = []; // Gets all the selected elements from Radio buttons
+    const sortedArrayOne = []; // Gets all the selected elements from Checkboxes.
+    const sortedArrayTwo = []; // Gets all the selected elements from Radio buttons.
 
-    // Checkbox: Baguette
+    // Checkbox: Baguette.
     if (baguette.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     }
-    // Checkbox: Boneless
+    // Checkbox: Boneless.
     if (boneless.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     }
-    // Checkbox: Burgers
+    // Checkbox: Burgers.
     if (burgers.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     }
-    // Checkbox: Coffee
+    // Checkbox: Coffee.
     if (coffee.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
@@ -199,7 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     }
-    // Checkbox: Corndogs
+    // Checkbox: Corndogs.
     if (corndogs.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     }
-    // Checkbox: Crepes
+    // Checkbox: Crepes.
     if (crepes.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
@@ -219,7 +219,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     }
-    // Checkbox: French fries
+    // Checkbox: French fries.
     if (frenchFries.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
@@ -229,7 +229,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     }
-    // Checkbox: Fried chicken
+    // Checkbox: Fried chicken.
     if (friedChicken.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
@@ -239,7 +239,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     }
-    // Checkbox: Ice cream
+    // Checkbox: Ice cream.
     if (iceCream.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
@@ -249,7 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     }
-    // Checkbox: Milkshakes
+    // Checkbox: Milkshakes.
     if (milkshakes.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
@@ -259,7 +259,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     }
-    // Checkbox: Nachos
+    // Checkbox: Nachos.
     if (nachos.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
@@ -269,7 +269,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     }
-    // Checkbox: Pasta
+    // Checkbox: Pasta.
     if (pasta.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
@@ -279,7 +279,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     }
-    // Checkbox: Pizza
+    // Checkbox: Pizza.
     if (pizza.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
@@ -289,7 +289,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     }
-    // Checkbox: Salad
+    // Checkbox: Salad.
     if (salad.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
@@ -299,7 +299,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     }
-    // Checkbox: Tacos/carne Asada
+    // Checkbox: Tacos/carne Asada.
     if (tacosCarneAsada.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
@@ -309,7 +309,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     }
-    // Checkbox: Tacos/cebosos
+    // Checkbox: Tacos/cebosos.
     if (tacosCebosos.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
@@ -319,7 +319,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     }
-    // Checkbox: Tacos/pastor
+    // Checkbox: Tacos/pastor.
     if (tacosPastor.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
@@ -329,7 +329,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     }
-    // Checkbox: Tacos/vapor
+    // Checkbox: Tacos/vapor.
     if (tacosVapor.checked) {
       foodArray.forEach((element) => {
         element.food.forEach((item) => {
@@ -340,7 +340,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    // Radio button: No
+    // Radio button: No.
     if (no.checked) {
       sortedArrayOne.forEach((element) => {
         if (element.unhealthy === "no") {
@@ -348,34 +348,39 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     } else {
-      sortedArrayOne.forEach(element => {
+      sortedArrayOne.forEach((element) => {
         sortedArrayTwo.push(element);
-      })
+      });
     }
 
-    console.log(sortedArrayTwo);
-    span.textContent = shuffle(sortedArrayTwo)[0].name;
+    // Loop that creates list of options:
+    let answer = "<ul>";
+    sortedArrayTwo.forEach((element) => {
+      answer += "<li>" + element.name + "</li>";
+    });
+    answer += "</ul>";
+    document.getElementById("result").innerHTML = answer;
   }
 
-  // Function: Shuffles array.
-  function shuffle(array) {
-    var m = array.length,
-      t,
-      i;
+  // // Function: Shuffles array.
+  // function shuffle(array) {
+  //   var m = array.length,
+  //     t,
+  //     i;
 
-    // While there remain elements to shuffle…
-    while (m) {
-      // Pick a remaining element…
-      i = Math.floor(Math.random() * m--);
+  //   // While there remain elements to shuffle…
+  //   while (m) {
+  //     // Pick a remaining element…
+  //     i = Math.floor(Math.random() * m--);
 
-      // And swap it with the current element.
-      t = array[m];
-      array[m] = array[i];
-      array[i] = t;
-    }
+  //     // And swap it with the current element.
+  //     t = array[m];
+  //     array[m] = array[i];
+  //     array[i] = t;
+  //   }
 
-    return array;
-  }
+  //   return array;
+  // }
 
   btn.addEventListener("click", findOption);
 });
