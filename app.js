@@ -52,17 +52,35 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       name: "Pizza bonles",
-      food: ["pizza", "boneless"],
+      food: ["pizza", "boneless", "french fries"],
       unhealthy: "yes",
     },
     {
       name: "Stella rose",
-      food: ["pasta", "crepes", "corndogs", "salad"],
+      food: [
+        "pasta",
+        "crepes",
+        "corndogs",
+        "salad",
+        "burgers",
+        "french fries",
+        "nachos",
+        "boneless",
+        "baguette",
+      ],
       unhealthy: "no",
     },
     {
       name: "Jarros y Tarros",
-      food: ["baguette", "bonless", "nachos", "salad"],
+      food: [
+        "baguette",
+        "boneless",
+        "nachos",
+        "salad",
+        "french fries",
+        "burgers",
+        "coffee",
+      ],
       hurtfull: "yes",
     },
     {
@@ -82,23 +100,23 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       name: "Tacos del Chavo",
-      food: ["tacos pastor"],
+      food: ["tacos vapor"],
       unhealthy: "yes",
     },
     {
       name: "Caffenio",
-      food: ["coffee", "milkshake"],
+      food: ["coffee", "milkshakes"],
       unhealthy: "no",
     },
     {
       name: "Dairy Queen",
-      food: ["ice cream"],
+      food: ["ice cream", "milkshakes"],
       unhealthy: "yes",
     },
     {
       name: "McDonalds",
       food: [
-        "burguers",
+        "burgers",
         "fried chicken",
         "french fries",
         "ice cream",
@@ -108,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       name: "Starbucks",
-      food: ["coffee", "milkshake"],
+      food: ["coffee", "milkshakes"],
       unhealthy: "no",
     },
     {
@@ -118,20 +136,211 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       name: "Lola",
-      food: ["boneless", "salad"],
+      food: [
+        "boneless",
+        "salad",
+        "burgers",
+        "french fries",
+        "pizza",
+        "pasta",
+        "coffee",
+      ],
       unhealthy: "yes",
     },
     {
-      name: "Manzara",
-      food: ["pasta", "salad", "pizza"],
+      name: "Manzara Salads",
+      food: ["salad"],
       unhealthy: "no",
     },
   ];
 
-  // Function: Creates a copy of foodArray, and returns a random option from witch to eat.
+  // Function: Creates a new Array, fills it with the checked elements, and returns a random option from witch to eat.
   function findOption() {
-    let copyArray = foodArray.slice();
-    span.textContent = shuffle(copyArray)[0].name;
+    const sortedArray = [];
+
+    // Checkbox: Baguette
+    if (baguette) {
+      foodArray.forEach((element) => {
+        element.food.forEach((item) => {
+          if (item === "baguette") {
+            sortedArray.push(element);
+          }
+        });
+      });
+    }
+    // Checkbox: Boneless
+    if (boneless) {
+      foodArray.forEach((element) => {
+        element.food.forEach((item) => {
+          if (item === "boneless") {
+            sortedArray.push(element);
+          }
+        });
+      });
+    }
+    // Checkbox: Burgers
+    if (burgers) {
+      foodArray.forEach((element) => {
+        element.food.forEach((item) => {
+          if (item === "burgers") {
+            sortedArray.push(element);
+          }
+        });
+      });
+    }
+    // Checkbox: Coffee
+    if (coffee) {
+      foodArray.forEach((element) => {
+        element.food.forEach((item) => {
+          if (item === "coffee") {
+            sortedArray.push(element);
+          }
+        });
+      });
+    }
+    // Checkbox: Corndogs
+    if (corndogs) {
+      foodArray.forEach((element) => {
+        element.food.forEach((item) => {
+          if (item === "corndogs") {
+            sortedArray.push(element);
+          }
+        });
+      });
+    }
+    // Checkbox: Crepes
+    if (crepes) {
+      foodArray.forEach((element) => {
+        element.food.forEach((item) => {
+          if (item === "crepes") {
+            sortedArray.push(element);
+          }
+        });
+      });
+    }
+    // Checkbox: French fries
+    if (frenchFries) {
+      foodArray.forEach((element) => {
+        element.food.forEach((item) => {
+          if (item === "french fries") {
+            sortedArray.push(element);
+          }
+        });
+      });
+    }
+    // Checkbox: Fried chicken
+    if (friedChicken) {
+      foodArray.forEach((element) => {
+        element.food.forEach((item) => {
+          if (item === "fried chicken") {
+            sortedArray.push(element);
+          }
+        });
+      });
+    }
+    // Checkbox: Ice cream
+    if (iceCream) {
+      foodArray.forEach((element) => {
+        element.food.forEach((item) => {
+          if (item === "ice cream") {
+            sortedArray.push(element);
+          }
+        });
+      });
+    }
+    // Checkbox: Milkshakes
+    if (milkshakes) {
+      foodArray.forEach((element) => {
+        element.food.forEach((item) => {
+          if (item === "milkshakes") {
+            sortedArray.push(element);
+          }
+        });
+      });
+    }
+    // Checkbox: Nachos
+    if (nachos) {
+      foodArray.forEach((element) => {
+        element.food.forEach((item) => {
+          if (item === "nachos") {
+            sortedArray.push(element);
+          }
+        });
+      });
+    }
+    // Checkbox: Pasta
+    if (pasta) {
+      foodArray.forEach((element) => {
+        element.food.forEach((item) => {
+          if (item === "pasta") {
+            sortedArray.push(element);
+          }
+        });
+      });
+    }
+    // Checkbox: Pizza
+    if (pizza) {
+      foodArray.forEach((element) => {
+        element.food.forEach((item) => {
+          if (item === "pizza") {
+            sortedArray.push(element);
+          }
+        });
+      });
+    }
+    // Checkbox: Salad
+    if (salad) {
+      foodArray.forEach((element) => {
+        element.food.forEach((item) => {
+          if (item === "salad") {
+            sortedArray.push(element);
+          }
+        });
+      });
+    }
+    // Checkbox: Tacos/carne Asada
+    if (tacosCarneAsada) {
+      foodArray.forEach((element) => {
+        element.food.forEach((item) => {
+          if (item === "tacos carne asada") {
+            sortedArray.push(element);
+          }
+        });
+      });
+    }
+    // Checkbox: Tacos/cebosos
+    if (tacosCebosos) {
+      foodArray.forEach((element) => {
+        element.food.forEach((item) => {
+          if (item === "tacos cebosos") {
+            sortedArray.push(element);
+          }
+        });
+      });
+    }
+    // Checkbox: Tacos/pastor
+    if (tacosPastor) {
+      foodArray.forEach((element) => {
+        element.food.forEach((item) => {
+          if (item === "tacos pastor") {
+            sortedArray.push(element);
+          }
+        });
+      });
+    }
+    // Checkbox: Tacos/vapor
+    if (tacosVapor) {
+      foodArray.forEach((element) => {
+        element.food.forEach((item) => {
+          if (item === "tacos vapor") {
+            sortedArray.push(element);
+          }
+        });
+      });
+    }
+    
+
+    span.textContent = shuffle(sortedArray)[0].name;
   }
 
   // Function: Shuffles array.
@@ -154,26 +363,26 @@ document.addEventListener("DOMContentLoaded", () => {
     return array;
   }
 
-  // Function: Goes through array and eliminates specific objects.
-  function sortArray(array) {
-    if (baguette == false) {
-      array.forEach(element => {
-        if (search(element.name, "baguette")) {
-          array.pop()
-        }
-      });
-    }
-    
-  }
+  // Currently not in use.
+  // // Function: Goes through foodArray and pushes checked objects to sortedArray.
+  // function sortArray(array) {
+  //   if (baguette) {
+  //     array.forEach((element) => {
+  //       if (search(element.name, "baguette")) {
+  //         array.pop();
+  //       }
+  //     });
+  //   }
+  // }
 
-  // Function: Searches for food in each element of array
-  function search(array, food) {
-    array.forEach(element => {
-      if (element === food) {
-        return true;
-      }
-    })
-  }
+  // // Function: Searches for food in each element of array
+  // function search(array, food) {
+  //   array.forEach((element) => {
+  //     if (element === food) {
+  //       return true;
+  //     }
+  //   });
+  // }
 
   btn.addEventListener("click", findOption);
 });
