@@ -13,6 +13,12 @@ body {
   font-weight: 500;
 }
 
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 #formContainer {
   margin-bottom: 30px;
   display: flex;
@@ -41,6 +47,17 @@ body {
   cursor: pointer;
 }
 
+#answerContainer {
+  min-height: 410px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+  padding: 15px 15px;
+  border: solid 1px #c5c5c5;
+  border-radius: 5px;
+  background-color: white;
+}
+
 /* Find option button */
 #btn {
   border: none;
@@ -60,4 +77,9 @@ body {
 
 #answer {
   font-weight: 400;
+  margin-bottom: 0;
+}
+
+#result {
+  margin-top: 0;
 }

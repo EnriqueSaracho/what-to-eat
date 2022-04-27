@@ -20,100 +20,104 @@
   </head>
   <body>
     <h1 id="title">What to eat</h1>
-    <!-- Checkboxes -->
-    <div id="formContainer">
-      <div class="form">
-        <h3 id="options" class="subject">Options:</h3>
-
-        <div class="row">
-          <label for="baguette">Baguette</label>
-          <input type="checkbox" id="baguette" />
-        </div>
-        <div class="row">
-          <label for="">Boneless</label>
-          <input type="checkbox" id="boneless" />
-        </div>
-        <div class="row">
-          <label for="burgers">Burgers</label>
-          <input type="checkbox" id="burgers" />
-        </div>
-        <div class="row">
-          <label for="coffee">Coffee</label>
-          <input type="checkbox" id="coffee" />
-        </div>
-        <div class="row">
-          <label for="corndogs">Corndogs</label>
-          <input type="checkbox" id="corndogs" />
-        </div>
-        <div class="row">
-          <label for="crepes">Crepes</label>
-          <input type="checkbox" id="crepes" />
-        </div>
-        <div class="row">
-          <label for="frechFries">French fries</label>
-          <input type="checkbox" id="frenchFries" />
-        </div>
-        <div class="row">
-          <label for="friedChicken">Fried chicken</label>
-          <input type="checkbox" id="friedChicken" />
-        </div>
-        <div class="row">
-          <label for="iceCream">Ice cream</label>
-          <input type="checkbox" id="iceCream" />
-        </div>
-        <div class="row">
-          <label for="milkshakes">Milkshakes</label>
-          <input type="checkbox" id="milkshakes" />
-        </div>
-        <div class="row">
-          <label for="nachos">Nachos</label>
-          <input type="checkbox" id="nachos" />
-        </div>
-        <div class="row">
-          <label for="pasta">Pasta</label>
-          <input type="checkbox" id="pasta" />
-        </div>
-        <div class="row">
-          <label for="pizza">Pizza</label>
-          <input type="checkbox" id="pizza" />
-        </div>
-        <div class="row">
-          <label for="salad">Salad</label>
-          <input type="checkbox" id="salad" />
-        </div>
-        <div class="row">
-          <label for="tacosCarneAsada">Tacos/carne asada</label>
-          <input type="checkbox" id="tacosCarneAsada" />
-        </div>
-        <div class="row">
-          <label for="tacosCebosos">Tacos/cebosos</label>
-          <input type="checkbox" id="tacosCebosos" />
-        </div>
-        <div class="row">
-          <label for="tacosPastor">Tacos/pastor</label>
-          <input type="checkbox" id="tacosPastor" />
-        </div>
-        <div class="row">
-          <label for="tacosVapor">Tacos/vapor</label>
-          <input type="checkbox" id="tacosVapor" />
-        </div>
+    <div id="container">
+      <div id="answerContainer">
+        <button id="btn">Find option</button>
+        <h3 id="answer">You could eat from...</h3>
+        <p id="result"></p>
       </div>
+      <!-- Checkboxes -->
+      <div id="formContainer">
+        <div class="form">
+          <h3 id="options" class="subject">Options:</h3>
 
-      <!-- Radio buttons -->
-      <div class="form">
-        <h3 id="unhealthy" class="subject">Include unhealthy?</h3>
-        <div class="row">
-          <label for="yes">Yes</label>
-          <input type="radio" name="health" id="yes" checked/>
+          <div class="row">
+            <label for="baguette">Baguette</label>
+            <input type="checkbox" id="baguette" />
+          </div>
+          <div class="row">
+            <label for="">Boneless</label>
+            <input type="checkbox" id="boneless" />
+          </div>
+          <div class="row">
+            <label for="burgers">Burgers</label>
+            <input type="checkbox" id="burgers" />
+          </div>
+          <div class="row">
+            <label for="coffee">Coffee</label>
+            <input type="checkbox" id="coffee" />
+          </div>
+          <div class="row">
+            <label for="corndogs">Corndogs</label>
+            <input type="checkbox" id="corndogs" />
+          </div>
+          <div class="row">
+            <label for="crepes">Crepes</label>
+            <input type="checkbox" id="crepes" />
+          </div>
+          <div class="row">
+            <label for="frechFries">French fries</label>
+            <input type="checkbox" id="frenchFries" />
+          </div>
+          <div class="row">
+            <label for="friedChicken">Fried chicken</label>
+            <input type="checkbox" id="friedChicken" />
+          </div>
+          <div class="row">
+            <label for="iceCream">Ice cream</label>
+            <input type="checkbox" id="iceCream" />
+          </div>
+          <div class="row">
+            <label for="milkshakes">Milkshakes</label>
+            <input type="checkbox" id="milkshakes" />
+          </div>
+          <div class="row">
+            <label for="nachos">Nachos</label>
+            <input type="checkbox" id="nachos" />
+          </div>
+          <div class="row">
+            <label for="pasta">Pasta</label>
+            <input type="checkbox" id="pasta" />
+          </div>
+          <div class="row">
+            <label for="pizza">Pizza</label>
+            <input type="checkbox" id="pizza" />
+          </div>
+          <div class="row">
+            <label for="salad">Salad</label>
+            <input type="checkbox" id="salad" />
+          </div>
+          <div class="row">
+            <label for="tacosCarneAsada">Tacos/carne asada</label>
+            <input type="checkbox" id="tacosCarneAsada" />
+          </div>
+          <div class="row">
+            <label for="tacosCebosos">Tacos/cebosos</label>
+            <input type="checkbox" id="tacosCebosos" />
+          </div>
+          <div class="row">
+            <label for="tacosPastor">Tacos/pastor</label>
+            <input type="checkbox" id="tacosPastor" />
+          </div>
+          <div class="row">
+            <label for="tacosVapor">Tacos/vapor</label>
+            <input type="checkbox" id="tacosVapor" />
+          </div>
         </div>
-        <div class="row">
-          <label for="no">No</label>
-          <input type="radio" name="health" id="no" />
+
+        <!-- Radio buttons -->
+        <div class="form">
+          <h3 id="unhealthy" class="subject">Include unhealthy?</h3>
+          <div class="row">
+            <label for="yes">Yes</label>
+            <input type="radio" name="health" id="yes" checked />
+          </div>
+          <div class="row">
+            <label for="no">No</label>
+            <input type="radio" name="health" id="no" />
+          </div>
         </div>
       </div>
     </div>
-    <button id="btn">Find option</button>
-    <h3 id="answer">You could eat from...</h3>
-    <p id="result"></p>
   </body>
 </html>
