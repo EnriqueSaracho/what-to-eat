@@ -363,26 +363,5 @@ document.addEventListener("DOMContentLoaded", () => {
     return array;
   }
 
-  // Currently not in use.
-  // // Function: Goes through foodArray and pushes checked objects to sortedArray.
-  // function sortArray(array) {
-  //   if (baguette) {
-  //     array.forEach((element) => {
-  //       if (search(element.name, "baguette")) {
-  //         array.pop();
-  //       }
-  //     });
-  //   }
-  // }
-
-  // // Function: Searches for food in each element of array
-  // function search(array, food) {
-  //   array.forEach((element) => {
-  //     if (element === food) {
-  //       return true;
-  //     }
-  //   });
-  // }
-
   btn.addEventListener("click", findOption);
 });
