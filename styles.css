@@ -71,6 +71,7 @@ body {
   border-radius: 7px;
   background-color: #7fffd4;
   box-shadow: 5px 5px 5px #c5c5c5, -2px -2px 2px rgb(254, 245, 234);
+  cursor: pointer;
 }
 #btn:hover {
   box-shadow: 7px 7px 5px #c5c5c5, -2px -2px 2px rgb(254, 245, 234);
